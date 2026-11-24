@@ -1,0 +1,54 @@
+name: CausalBound CI & Non-Root Harbor Verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  engines-and-harbor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.2"
+
+      - name: Install pinned dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Regenerate lockstep assets & run unit/parity tests
+        run: |
+          python scripts/sync_eval_task.py
+          pytest -v tests/test_engine_b_parity.py
+
+      - name: Run 3-tier verification regimes (Nop / Oracle / +/-1 Perturbation)
+        run: python eval_task/verify_regimes.py
+
+      - name: Build & verify non-root Harbor Docker container (1 vCPU, 2048 MB, no net)
+        run: |
+          docker build -f eval_task/environment/Dockerfile -t causalbound-eval eval_task
+          docker run --rm --cpus=1 --memory=2048m --network=none \
+            -v "${{ github.workspace }}/eval_task/solution:/solution:ro" \
+            -v "${{ github.workspace }}/eval_task/tests:/tests:ro" \
+            causalbound-eval bash -c "bash /solution/solve.sh && bash /tests/test.sh"
+
+      - name: Run V1 vs V2 benchmark
+        run: python benchmarks/run_v1_vs_v2.py
+
+  frontend-check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install
+      - run: npm run typecheck
+      - run: npm run build
