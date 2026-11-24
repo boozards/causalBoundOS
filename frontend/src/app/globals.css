@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background-color: #FAF8F4;
+    color: #181715;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Tactile editorial range slider */
+input[type="range"].editorial-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: #DFD8CA;
+  border-radius: 999px;
+  outline: none;
+}
+
+input[type="range"].editorial-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  background: #181715;
+  border: 2px solid #FAF8F4;
+  box-shadow: 0 1px 3px rgba(24, 23, 21, 0.25);
+  cursor: pointer;
+}
