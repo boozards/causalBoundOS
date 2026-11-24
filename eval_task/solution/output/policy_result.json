@@ -1,0 +1,208 @@
+{
+  "policy_id": "policy_2026_11_nominal_v1",
+  "evaluated_at_utc": "2026-11-02T12:00:00.500Z",
+  "audit_status": "PASSED",
+  "selected_thresholds": {
+    "APAC_enterprise": 0.65,
+    "APAC_micro": 0.65,
+    "APAC_mid_market": 0.7,
+    "APAC_smb": 0.6,
+    "EU_enterprise": 0.7,
+    "EU_micro": 0.75,
+    "EU_mid_market": 0.6,
+    "EU_smb": 0.65,
+    "LATAM_enterprise": 0.7,
+    "LATAM_micro": 0.75,
+    "LATAM_mid_market": 0.7,
+    "LATAM_smb": 0.75,
+    "NA_enterprise": 0.6,
+    "NA_micro": 0.65,
+    "NA_mid_market": 0.7,
+    "NA_smb": 0.75
+  },
+  "total_loss_cents": 208714380,
+  "total_fp": 85,
+  "total_fn": 701,
+  "global_tpr_spread": 0.17528957528957528,
+  "slice_ece": {
+    "APAC_enterprise": 0.08714301265822785,
+    "APAC_micro": 0.05730433950617281,
+    "APAC_mid_market": 0.0970956879432624,
+    "APAC_smb": 0.08729783798882679,
+    "EU_enterprise": 0.08200553061224489,
+    "EU_micro": 0.10835914569536424,
+    "EU_mid_market": 0.050904345945945915,
+    "EU_smb": 0.033378238095238086,
+    "LATAM_enterprise": 0.09523635502958577,
+    "LATAM_micro": 0.09019696531791903,
+    "LATAM_mid_market": 0.11299588157894737,
+    "LATAM_smb": 0.07961079473684214,
+    "NA_enterprise": 0.0501826387434555,
+    "NA_micro": 0.08771657857142855,
+    "NA_mid_market": 0.09888544252873561,
+    "NA_smb": 0.0665320382165605
+  },
+  "slice_metrics": {
+    "APAC_enterprise": {
+      "threshold": 0.65,
+      "fp": 6,
+      "fn": 45,
+      "tp": 23,
+      "tn": 84,
+      "tpr": 0.3382352941176471,
+      "fpr": 0.06666666666666667,
+      "loss_cents": 18840000
+    },
+    "APAC_micro": {
+      "threshold": 0.65,
+      "fp": 7,
+      "fn": 37,
+      "tp": 24,
+      "tn": 94,
+      "tpr": 0.39344262295081966,
+      "fpr": 0.06930693069306931,
+      "loss_cents": 883200
+    },
+    "APAC_mid_market": {
+      "threshold": 0.7,
+      "fp": 6,
+      "fn": 28,
+      "tp": 18,
+      "tn": 89,
+      "tpr": 0.391304347826087,
+      "fpr": 0.06315789473684211,
+      "loss_cents": 5256000
+    },
+    "APAC_smb": {
+      "threshold": 0.6,
+      "fp": 6,
+      "fn": 53,
+      "tp": 27,
+      "tn": 93,
+      "tpr": 0.3375,
+      "fpr": 0.06060606060606061,
+      "loss_cents": 9350400
+    },
+    "EU_enterprise": {
+      "threshold": 0.7,
+      "fp": 5,
+      "fn": 42,
+      "tp": 16,
+      "tn": 84,
+      "tpr": 0.27586206896551724,
+      "fpr": 0.056179775280898875,
+      "loss_cents": 18528000
+    },
+    "EU_micro": {
+      "threshold": 0.75,
+      "fp": 2,
+      "fn": 40,
+      "tp": 20,
+      "tn": 89,
+      "tpr": 0.3333333333333333,
+      "fpr": 0.02197802197802198,
+      "loss_cents": 861120
+    },
+    "EU_mid_market": {
+      "threshold": 0.6,
+      "fp": 9,
+      "fn": 41,
+      "tp": 24,
+      "tn": 111,
+      "tpr": 0.36923076923076925,
+      "fpr": 0.075,
+      "loss_cents": 18236400
+    },
+    "EU_smb": {
+      "threshold": 0.65,
+      "fp": 6,
+      "fn": 47,
+      "tp": 22,
+      "tn": 93,
+      "tpr": 0.3188405797101449,
+      "fpr": 0.06060606060606061,
+      "loss_cents": 2556900
+    },
+    "LATAM_enterprise": {
+      "threshold": 0.7,
+      "fp": 7,
+      "fn": 47,
+      "tp": 27,
+      "tn": 88,
+      "tpr": 0.36486486486486486,
+      "fpr": 0.07368421052631578,
+      "loss_cents": 64204400
+    },
+    "LATAM_micro": {
+      "threshold": 0.75,
+      "fp": 7,
+      "fn": 52,
+      "tp": 18,
+      "tn": 96,
+      "tpr": 0.2571428571428571,
+      "fpr": 0.06796116504854369,
+      "loss_cents": 3969360
+    },
+    "LATAM_mid_market": {
+      "threshold": 0.7,
+      "fp": 2,
+      "fn": 42,
+      "tp": 30,
+      "tn": 78,
+      "tpr": 0.4166666666666667,
+      "fpr": 0.025,
+      "loss_cents": 6705000
+    },
+    "LATAM_smb": {
+      "threshold": 0.75,
+      "fp": 3,
+      "fn": 58,
+      "tp": 27,
+      "tn": 102,
+      "tpr": 0.3176470588235294,
+      "fpr": 0.02857142857142857,
+      "loss_cents": 3600360
+    },
+    "NA_enterprise": {
+      "threshold": 0.6,
+      "fp": 7,
+      "fn": 42,
+      "tp": 32,
+      "tn": 110,
+      "tpr": 0.43243243243243246,
+      "fpr": 0.05982905982905983,
+      "loss_cents": 45374000
+    },
+    "NA_micro": {
+      "threshold": 0.65,
+      "fp": 3,
+      "fn": 36,
+      "tp": 19,
+      "tn": 82,
+      "tpr": 0.34545454545454546,
+      "fpr": 0.03529411764705882,
+      "loss_cents": 2120400
+    },
+    "NA_mid_market": {
+      "threshold": 0.7,
+      "fp": 8,
+      "fn": 42,
+      "tp": 18,
+      "tn": 106,
+      "tpr": 0.3,
+      "fpr": 0.07017543859649122,
+      "loss_cents": 5924000
+    },
+    "NA_smb": {
+      "threshold": 0.75,
+      "fp": 1,
+      "fn": 49,
+      "tp": 19,
+      "tn": 88,
+      "tpr": 0.27941176470588236,
+      "fpr": 0.011235955056179775,
+      "loss_cents": 2304840
+    }
+  },
+  "violated_constraints": []
+}

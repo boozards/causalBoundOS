@@ -1,0 +1,452 @@
+[
+  {
+    "merchant_id": "MRC-0001",
+    "slice_id": "APAC_enterprise",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:00:00.500Z",
+    "features": {
+      "account_tenure_months": 4.94,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 13000.0,
+      "dispute_rate_bps": 625.0,
+      "settlement_hold_days": 8,
+      "effective_risk_ratio": 3.19426557,
+      "liquidity_coverage_index": 8.27278156
+    }
+  },
+  {
+    "merchant_id": "MRC-0002",
+    "slice_id": "APAC_micro",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:00:43.500Z",
+    "features": {
+      "account_tenure_months": 6.24,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 10500.0,
+      "dispute_rate_bps": 630.0,
+      "settlement_hold_days": 6,
+      "effective_risk_ratio": 2.62126834,
+      "liquidity_coverage_index": 8.23470046
+    }
+  },
+  {
+    "merchant_id": "MRC-0003",
+    "slice_id": "APAC_mid_market",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:01:26.500Z",
+    "features": {
+      "account_tenure_months": 30.11,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 5750.0,
+      "dispute_rate_bps": 695.0,
+      "settlement_hold_days": 6,
+      "effective_risk_ratio": 3.32037613,
+      "liquidity_coverage_index": 7.0810375
+    }
+  },
+  {
+    "merchant_id": "MRC-0004",
+    "slice_id": "APAC_smb",
+    "threshold": 0.6,
+    "timestamp_utc": "2026-11-02T08:02:09.500Z",
+    "features": {
+      "account_tenure_months": 25.31,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 10000.0,
+      "dispute_rate_bps": 570.0,
+      "settlement_hold_days": 17,
+      "effective_risk_ratio": 2.28410955,
+      "liquidity_coverage_index": 8.89106405
+    }
+  },
+  {
+    "merchant_id": "MRC-0005",
+    "slice_id": "EU_enterprise",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:02:52.500Z",
+    "features": {
+      "account_tenure_months": 6.32,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 10250.0,
+      "dispute_rate_bps": 530.0,
+      "settlement_hold_days": 0,
+      "effective_risk_ratio": 2.28206032,
+      "liquidity_coverage_index": 7.47252308
+    }
+  },
+  {
+    "merchant_id": "MRC-0006",
+    "slice_id": "EU_micro",
+    "threshold": 0.75,
+    "timestamp_utc": "2026-11-02T08:03:35.500Z",
+    "features": {
+      "account_tenure_months": 29.91,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 6500.0,
+      "dispute_rate_bps": 665.0,
+      "settlement_hold_days": 16,
+      "effective_risk_ratio": 2.87381309,
+      "liquidity_coverage_index": 8.1590634
+    }
+  },
+  {
+    "merchant_id": "MRC-0007",
+    "slice_id": "EU_mid_market",
+    "threshold": 0.6,
+    "timestamp_utc": "2026-11-02T08:04:18.500Z",
+    "features": {
+      "account_tenure_months": 30.81,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 13250.0,
+      "dispute_rate_bps": 760.0,
+      "settlement_hold_days": 12,
+      "effective_risk_ratio": 3.72246099,
+      "liquidity_coverage_index": 8.34698737
+    }
+  },
+  {
+    "merchant_id": "MRC-0008",
+    "slice_id": "EU_smb",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:05:01.500Z",
+    "features": {
+      "account_tenure_months": 3.89,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 6250.0,
+      "dispute_rate_bps": 790.0,
+      "settlement_hold_days": 2,
+      "effective_risk_ratio": 5.33343301,
+      "liquidity_coverage_index": 6.40689458
+    }
+  },
+  {
+    "merchant_id": "MRC-0009",
+    "slice_id": "LATAM_enterprise",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:05:44.500Z",
+    "features": {
+      "account_tenure_months": 2.86,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 3500.0,
+      "dispute_rate_bps": 665.0,
+      "settlement_hold_days": 13,
+      "effective_risk_ratio": 2.86385065,
+      "liquidity_coverage_index": 7.71128708
+    }
+  },
+  {
+    "merchant_id": "MRC-0010",
+    "slice_id": "LATAM_micro",
+    "threshold": 0.75,
+    "timestamp_utc": "2026-11-02T08:06:27.500Z",
+    "features": {
+      "account_tenure_months": 9.38,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 13250.0,
+      "dispute_rate_bps": 780.0,
+      "settlement_hold_days": 3,
+      "effective_risk_ratio": 3.82088126,
+      "liquidity_coverage_index": 7.74041069
+    }
+  },
+  {
+    "merchant_id": "MRC-0011",
+    "slice_id": "LATAM_mid_market",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:07:10.500Z",
+    "features": {
+      "account_tenure_months": 9.29,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 4500.0,
+      "dispute_rate_bps": 670.0,
+      "settlement_hold_days": 19,
+      "effective_risk_ratio": 3.14344884,
+      "liquidity_coverage_index": 7.98921346
+    }
+  },
+  {
+    "merchant_id": "MRC-0012",
+    "slice_id": "LATAM_smb",
+    "threshold": 0.75,
+    "timestamp_utc": "2026-11-02T08:07:53.500Z",
+    "features": {
+      "account_tenure_months": 8.95,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 4000.0,
+      "dispute_rate_bps": 665.0,
+      "settlement_hold_days": 8,
+      "effective_risk_ratio": 3.3563192,
+      "liquidity_coverage_index": 6.99978834
+    }
+  },
+  {
+    "merchant_id": "MRC-0013",
+    "slice_id": "NA_enterprise",
+    "threshold": 0.6,
+    "timestamp_utc": "2026-11-02T08:08:36.500Z",
+    "features": {
+      "account_tenure_months": 14.53,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 10250.0,
+      "dispute_rate_bps": 600.0,
+      "settlement_hold_days": 18,
+      "effective_risk_ratio": 2.13329723,
+      "liquidity_coverage_index": 9.31108222
+    }
+  },
+  {
+    "merchant_id": "MRC-0014",
+    "slice_id": "NA_micro",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:09:19.500Z",
+    "features": {
+      "account_tenure_months": 6.59,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 13250.0,
+      "dispute_rate_bps": 590.0,
+      "settlement_hold_days": 14,
+      "effective_risk_ratio": 2.72617694,
+      "liquidity_coverage_index": 8.90082844
+    }
+  },
+  {
+    "merchant_id": "MRC-0015",
+    "slice_id": "NA_mid_market",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:10:02.500Z",
+    "features": {
+      "account_tenure_months": 31.05,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 1500.0,
+      "dispute_rate_bps": 545.0,
+      "settlement_hold_days": 10,
+      "effective_risk_ratio": 2.2029198,
+      "liquidity_coverage_index": 6.5024335
+    }
+  },
+  {
+    "merchant_id": "MRC-0016",
+    "slice_id": "NA_smb",
+    "threshold": 0.75,
+    "timestamp_utc": "2026-11-02T08:10:45.500Z",
+    "features": {
+      "account_tenure_months": 32.24,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 12000.0,
+      "dispute_rate_bps": 805.0,
+      "settlement_hold_days": 10,
+      "effective_risk_ratio": 4.2068082,
+      "liquidity_coverage_index": 7.9780175
+    }
+  },
+  {
+    "merchant_id": "MRC-0017",
+    "slice_id": "APAC_enterprise",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:11:28.500Z",
+    "features": {
+      "account_tenure_months": 35.94,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 6750.0,
+      "dispute_rate_bps": 585.0,
+      "settlement_hold_days": 6,
+      "effective_risk_ratio": 2.0680436,
+      "liquidity_coverage_index": 7.90248392
+    }
+  },
+  {
+    "merchant_id": "MRC-0018",
+    "slice_id": "APAC_micro",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:12:11.500Z",
+    "features": {
+      "account_tenure_months": 20.53,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 11500.0,
+      "dispute_rate_bps": 715.0,
+      "settlement_hold_days": 14,
+      "effective_risk_ratio": 3.39508373,
+      "liquidity_coverage_index": 8.46524121
+    }
+  },
+  {
+    "merchant_id": "MRC-0019",
+    "slice_id": "APAC_mid_market",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:12:54.500Z",
+    "features": {
+      "account_tenure_months": 22.9,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 9750.0,
+      "dispute_rate_bps": 745.0,
+      "settlement_hold_days": 11,
+      "effective_risk_ratio": 3.69804338,
+      "liquidity_coverage_index": 7.98822352
+    }
+  },
+  {
+    "merchant_id": "MRC-0020",
+    "slice_id": "APAC_smb",
+    "threshold": 0.6,
+    "timestamp_utc": "2026-11-02T08:13:37.500Z",
+    "features": {
+      "account_tenure_months": 22.18,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 2500.0,
+      "dispute_rate_bps": 565.0,
+      "settlement_hold_days": 6,
+      "effective_risk_ratio": 2.03534298,
+      "liquidity_coverage_index": 6.95952928
+    }
+  },
+  {
+    "merchant_id": "MRC-0021",
+    "slice_id": "EU_enterprise",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:14:20.500Z",
+    "features": {
+      "account_tenure_months": 15.05,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 12000.0,
+      "dispute_rate_bps": 555.0,
+      "settlement_hold_days": 7,
+      "effective_risk_ratio": 2.45994167,
+      "liquidity_coverage_index": 8.26278898
+    }
+  },
+  {
+    "merchant_id": "MRC-0022",
+    "slice_id": "EU_micro",
+    "threshold": 0.75,
+    "timestamp_utc": "2026-11-02T08:15:03.500Z",
+    "features": {
+      "account_tenure_months": 23.51,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 750.0,
+      "dispute_rate_bps": 695.0,
+      "settlement_hold_days": 4,
+      "effective_risk_ratio": 3.465607,
+      "liquidity_coverage_index": 4.79950412
+    }
+  },
+  {
+    "merchant_id": "MRC-0023",
+    "slice_id": "EU_mid_market",
+    "threshold": 0.6,
+    "timestamp_utc": "2026-11-02T08:15:46.500Z",
+    "features": {
+      "account_tenure_months": 7.07,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 2500.0,
+      "dispute_rate_bps": 790.0,
+      "settlement_hold_days": 19,
+      "effective_risk_ratio": 3.58193474,
+      "liquidity_coverage_index": 7.53489487
+    }
+  },
+  {
+    "merchant_id": "MRC-0024",
+    "slice_id": "EU_smb",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:16:29.500Z",
+    "features": {
+      "account_tenure_months": 29.72,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 3000.0,
+      "dispute_rate_bps": 620.0,
+      "settlement_hold_days": 8,
+      "effective_risk_ratio": 2.70772397,
+      "liquidity_coverage_index": 6.81872494
+    }
+  },
+  {
+    "merchant_id": "MRC-0025",
+    "slice_id": "LATAM_enterprise",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:17:12.500Z",
+    "features": {
+      "account_tenure_months": 32.08,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 4750.0,
+      "dispute_rate_bps": 575.0,
+      "settlement_hold_days": 16,
+      "effective_risk_ratio": 2.28212679,
+      "liquidity_coverage_index": 8.06247486
+    }
+  },
+  {
+    "merchant_id": "MRC-0026",
+    "slice_id": "LATAM_micro",
+    "threshold": 0.75,
+    "timestamp_utc": "2026-11-02T08:17:55.500Z",
+    "features": {
+      "account_tenure_months": 15.92,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 1000.0,
+      "dispute_rate_bps": 730.0,
+      "settlement_hold_days": 9,
+      "effective_risk_ratio": 3.079419,
+      "liquidity_coverage_index": 5.96389991
+    }
+  },
+  {
+    "merchant_id": "MRC-0027",
+    "slice_id": "LATAM_mid_market",
+    "threshold": 0.7,
+    "timestamp_utc": "2026-11-02T08:18:38.500Z",
+    "features": {
+      "account_tenure_months": 10.36,
+      "kyc_tier": 0,
+      "reserve_deposit_usd": 13250.0,
+      "dispute_rate_bps": 815.0,
+      "settlement_hold_days": 2,
+      "effective_risk_ratio": 5.19161987,
+      "liquidity_coverage_index": 7.1052742
+    }
+  },
+  {
+    "merchant_id": "MRC-0028",
+    "slice_id": "LATAM_smb",
+    "threshold": 0.75,
+    "timestamp_utc": "2026-11-02T08:19:21.500Z",
+    "features": {
+      "account_tenure_months": 22.61,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 0.0,
+      "dispute_rate_bps": 585.0,
+      "settlement_hold_days": 6,
+      "effective_risk_ratio": 2.1367771,
+      "liquidity_coverage_index": -0.914962
+    }
+  },
+  {
+    "merchant_id": "MRC-0029",
+    "slice_id": "NA_enterprise",
+    "threshold": 0.6,
+    "timestamp_utc": "2026-11-02T08:20:04.500Z",
+    "features": {
+      "account_tenure_months": 27.37,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 14500.0,
+      "dispute_rate_bps": 710.0,
+      "settlement_hold_days": 16,
+      "effective_risk_ratio": 2.71677023,
+      "liquidity_coverage_index": 9.25833724
+    }
+  },
+  {
+    "merchant_id": "MRC-0030",
+    "slice_id": "NA_micro",
+    "threshold": 0.65,
+    "timestamp_utc": "2026-11-02T08:20:47.500Z",
+    "features": {
+      "account_tenure_months": 7.64,
+      "kyc_tier": 1,
+      "reserve_deposit_usd": 3250.0,
+      "dispute_rate_bps": 820.0,
+      "settlement_hold_days": 17,
+      "effective_risk_ratio": 3.87753549,
+      "liquidity_coverage_index": 7.59602528
+    }
+  }
+]

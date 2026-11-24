@@ -1,0 +1,90 @@
+{
+  "action_specs": {
+    "dispute_reduction_bps": {
+      "direction": -1,
+      "linear_weight": 1.25,
+      "max_delta": 500,
+      "min_delta": 0,
+      "num_steps": 101,
+      "quadratic_weight": 0.04,
+      "step": 5,
+      "target_feature": "dispute_rate_bps"
+    },
+    "kyc_tier_delta": {
+      "direction": 1,
+      "linear_weight": 4.5,
+      "max_delta": 2,
+      "min_delta": 0,
+      "num_steps": 3,
+      "quadratic_weight": 1.2,
+      "step": 1,
+      "target_feature": "kyc_tier"
+    },
+    "reserve_deposit_usd_delta": {
+      "direction": 1,
+      "linear_weight": 1.0,
+      "max_delta": 100000,
+      "min_delta": 0,
+      "num_steps": 401,
+      "quadratic_weight": 0.02,
+      "step": 250,
+      "target_feature": "reserve_deposit_usd"
+    },
+    "settlement_hold_days_delta": {
+      "direction": 1,
+      "linear_weight": 1.15,
+      "max_delta": 180,
+      "min_delta": 0,
+      "num_steps": 181,
+      "quadratic_weight": 0.03,
+      "step": 1,
+      "target_feature": "settlement_hold_days"
+    }
+  },
+  "candidates_per_instance": 21992043,
+  "cross_weights": {
+    "dispute_reduction_bps__kyc_tier_delta": 0.45,
+    "dispute_reduction_bps__reserve_deposit_usd_delta": 0.015,
+    "dispute_reduction_bps__settlement_hold_days_delta": 0.025,
+    "kyc_tier_delta__reserve_deposit_usd_delta": 0.18,
+    "kyc_tier_delta__settlement_hold_days_delta": 0.3,
+    "reserve_deposit_usd_delta__settlement_hold_days_delta": 0.012
+  },
+  "derived_features": [
+    "effective_risk_ratio",
+    "liquidity_coverage_index"
+  ],
+  "feature_order": [
+    "account_tenure_months",
+    "kyc_tier",
+    "reserve_deposit_usd",
+    "dispute_rate_bps",
+    "settlement_hold_days",
+    "effective_risk_ratio",
+    "liquidity_coverage_index"
+  ],
+  "immutable_features": [
+    "account_tenure_months"
+  ],
+  "monotonic_cst": [
+    -1,
+    -1,
+    -1,
+    1,
+    -1,
+    1,
+    -1
+  ],
+  "runtime_provenance": {
+    "numpy_version": "2.2.3",
+    "python_version": "3.13.14",
+    "scikit_learn_version": "1.6.1"
+  },
+  "schema_version": "1.0.0",
+  "seed": 42,
+  "tolerances": {
+    "dag_residual_abs": 0.0001,
+    "optimality_one_sided": 0.05,
+    "tie_break_cost_eps": 1e-09
+  }
+}

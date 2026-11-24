@@ -1,0 +1,1293 @@
+{
+  "schema_version": "1.0.0",
+  "policy_result": {
+    "policy_id": "policy_2026_11_nominal_v1",
+    "evaluated_at_utc": "2026-11-02T12:00:00.500Z",
+    "audit_status": "PASSED",
+    "selected_thresholds": {
+      "APAC_enterprise": 0.65,
+      "APAC_micro": 0.65,
+      "APAC_mid_market": 0.7,
+      "APAC_smb": 0.6,
+      "EU_enterprise": 0.7,
+      "EU_micro": 0.75,
+      "EU_mid_market": 0.6,
+      "EU_smb": 0.65,
+      "LATAM_enterprise": 0.7,
+      "LATAM_micro": 0.75,
+      "LATAM_mid_market": 0.7,
+      "LATAM_smb": 0.75,
+      "NA_enterprise": 0.6,
+      "NA_micro": 0.65,
+      "NA_mid_market": 0.7,
+      "NA_smb": 0.75
+    },
+    "total_loss_cents": 208714380,
+    "total_fp": 85,
+    "total_fn": 701,
+    "global_tpr_spread": 0.17528957528957528,
+    "slice_ece": {
+      "APAC_enterprise": 0.08714301265822785,
+      "APAC_micro": 0.05730433950617281,
+      "APAC_mid_market": 0.0970956879432624,
+      "APAC_smb": 0.08729783798882679,
+      "EU_enterprise": 0.08200553061224489,
+      "EU_micro": 0.10835914569536424,
+      "EU_mid_market": 0.050904345945945915,
+      "EU_smb": 0.033378238095238086,
+      "LATAM_enterprise": 0.09523635502958577,
+      "LATAM_micro": 0.09019696531791903,
+      "LATAM_mid_market": 0.11299588157894737,
+      "LATAM_smb": 0.07961079473684214,
+      "NA_enterprise": 0.0501826387434555,
+      "NA_micro": 0.08771657857142855,
+      "NA_mid_market": 0.09888544252873561,
+      "NA_smb": 0.0665320382165605
+    },
+    "slice_metrics": {
+      "APAC_enterprise": {
+        "threshold": 0.65,
+        "fp": 6,
+        "fn": 45,
+        "tp": 23,
+        "tn": 84,
+        "tpr": 0.3382352941176471,
+        "fpr": 0.06666666666666667,
+        "loss_cents": 18840000
+      },
+      "APAC_micro": {
+        "threshold": 0.65,
+        "fp": 7,
+        "fn": 37,
+        "tp": 24,
+        "tn": 94,
+        "tpr": 0.39344262295081966,
+        "fpr": 0.06930693069306931,
+        "loss_cents": 883200
+      },
+      "APAC_mid_market": {
+        "threshold": 0.7,
+        "fp": 6,
+        "fn": 28,
+        "tp": 18,
+        "tn": 89,
+        "tpr": 0.391304347826087,
+        "fpr": 0.06315789473684211,
+        "loss_cents": 5256000
+      },
+      "APAC_smb": {
+        "threshold": 0.6,
+        "fp": 6,
+        "fn": 53,
+        "tp": 27,
+        "tn": 93,
+        "tpr": 0.3375,
+        "fpr": 0.06060606060606061,
+        "loss_cents": 9350400
+      },
+      "EU_enterprise": {
+        "threshold": 0.7,
+        "fp": 5,
+        "fn": 42,
+        "tp": 16,
+        "tn": 84,
+        "tpr": 0.27586206896551724,
+        "fpr": 0.056179775280898875,
+        "loss_cents": 18528000
+      },
+      "EU_micro": {
+        "threshold": 0.75,
+        "fp": 2,
+        "fn": 40,
+        "tp": 20,
+        "tn": 89,
+        "tpr": 0.3333333333333333,
+        "fpr": 0.02197802197802198,
+        "loss_cents": 861120
+      },
+      "EU_mid_market": {
+        "threshold": 0.6,
+        "fp": 9,
+        "fn": 41,
+        "tp": 24,
+        "tn": 111,
+        "tpr": 0.36923076923076925,
+        "fpr": 0.075,
+        "loss_cents": 18236400
+      },
+      "EU_smb": {
+        "threshold": 0.65,
+        "fp": 6,
+        "fn": 47,
+        "tp": 22,
+        "tn": 93,
+        "tpr": 0.3188405797101449,
+        "fpr": 0.06060606060606061,
+        "loss_cents": 2556900
+      },
+      "LATAM_enterprise": {
+        "threshold": 0.7,
+        "fp": 7,
+        "fn": 47,
+        "tp": 27,
+        "tn": 88,
+        "tpr": 0.36486486486486486,
+        "fpr": 0.07368421052631578,
+        "loss_cents": 64204400
+      },
+      "LATAM_micro": {
+        "threshold": 0.75,
+        "fp": 7,
+        "fn": 52,
+        "tp": 18,
+        "tn": 96,
+        "tpr": 0.2571428571428571,
+        "fpr": 0.06796116504854369,
+        "loss_cents": 3969360
+      },
+      "LATAM_mid_market": {
+        "threshold": 0.7,
+        "fp": 2,
+        "fn": 42,
+        "tp": 30,
+        "tn": 78,
+        "tpr": 0.4166666666666667,
+        "fpr": 0.025,
+        "loss_cents": 6705000
+      },
+      "LATAM_smb": {
+        "threshold": 0.75,
+        "fp": 3,
+        "fn": 58,
+        "tp": 27,
+        "tn": 102,
+        "tpr": 0.3176470588235294,
+        "fpr": 0.02857142857142857,
+        "loss_cents": 3600360
+      },
+      "NA_enterprise": {
+        "threshold": 0.6,
+        "fp": 7,
+        "fn": 42,
+        "tp": 32,
+        "tn": 110,
+        "tpr": 0.43243243243243246,
+        "fpr": 0.05982905982905983,
+        "loss_cents": 45374000
+      },
+      "NA_micro": {
+        "threshold": 0.65,
+        "fp": 3,
+        "fn": 36,
+        "tp": 19,
+        "tn": 82,
+        "tpr": 0.34545454545454546,
+        "fpr": 0.03529411764705882,
+        "loss_cents": 2120400
+      },
+      "NA_mid_market": {
+        "threshold": 0.7,
+        "fp": 8,
+        "fn": 42,
+        "tp": 18,
+        "tn": 106,
+        "tpr": 0.3,
+        "fpr": 0.07017543859649122,
+        "loss_cents": 5924000
+      },
+      "NA_smb": {
+        "threshold": 0.75,
+        "fp": 1,
+        "fn": 49,
+        "tp": 19,
+        "tn": 88,
+        "tpr": 0.27941176470588236,
+        "fpr": 0.011235955056179775,
+        "loss_cents": 2304840
+      }
+    },
+    "violated_constraints": []
+  },
+  "recourse_results": [
+    {
+      "merchant_id": "MRC-0001",
+      "slice_id": "APAC_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.9403415640276809,
+      "counterfactual_risk_score": 0.5683404053433322,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 4.94,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 13000.0,
+        "dispute_rate_bps": 625.0,
+        "settlement_hold_days": 8,
+        "effective_risk_ratio": 2.1749107637217198,
+        "liquidity_coverage_index": 9.07278155656217
+      },
+      "total_cost": 13.8,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 6,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0002",
+      "slice_id": "APAC_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.7783464353782578,
+      "counterfactual_risk_score": 0.5620512107267529,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 6.24,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 10500.0,
+        "dispute_rate_bps": 630.0,
+        "settlement_hold_days": 6,
+        "effective_risk_ratio": 2.2028986357915703,
+        "liquidity_coverage_index": 8.634700460822078
+      },
+      "total_cost": 5.7,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 5,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0003",
+      "slice_id": "APAC_mid_market",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.9634122732791339,
+      "counterfactual_risk_score": 0.6550589179086035,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 2
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 2
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 30.11,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 5750.0,
+        "dispute_rate_bps": 695.0,
+        "settlement_hold_days": 8,
+        "effective_risk_ratio": 2.327330993402551,
+        "liquidity_coverage_index": 8.09358671336238
+      },
+      "total_cost": 17.419999999999998,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 129,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0004",
+      "slice_id": "APAC_smb",
+      "audit_status": "PASSED",
+      "threshold": 0.6,
+      "initial_risk_score": 0.6977432594014876,
+      "counterfactual_risk_score": 0.5596179167651889,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 500,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 2,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 25.31,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 10500.0,
+        "dispute_rate_bps": 570.0,
+        "settlement_hold_days": 17,
+        "effective_risk_ratio": 1.9157626375298868,
+        "liquidity_coverage_index": 9.339849449262369
+      },
+      "total_cost": 8.14,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 22,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0005",
+      "slice_id": "EU_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.7490179493615434,
+      "counterfactual_risk_score": 0.6913484463412062,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 250,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 1,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 6.32,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 10500.0,
+        "dispute_rate_bps": 530.0,
+        "settlement_hold_days": 0,
+        "effective_risk_ratio": 2.2820603179936993,
+        "liquidity_coverage_index": 7.4966183057328735
+      },
+      "total_cost": 1.02,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 4,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0006",
+      "slice_id": "EU_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.75,
+      "initial_risk_score": 0.8688829856009715,
+      "counterfactual_risk_score": 0.7026080094204091,
+      "actions": {
+        "dispute_reduction_bps": 15,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 3,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 29.91,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 6500.0,
+        "dispute_rate_bps": 650.0,
+        "settlement_hold_days": 16,
+        "effective_risk_ratio": 2.324578869504504,
+        "liquidity_coverage_index": 8.594162957419396
+      },
+      "total_cost": 11.16,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 8,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0007",
+      "slice_id": "EU_mid_market",
+      "audit_status": "PASSED",
+      "threshold": 0.6,
+      "initial_risk_score": 0.9790907000703131,
+      "counterfactual_risk_score": 0.5984414060879134,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 9
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 9
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 30.81,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 13250.0,
+        "dispute_rate_bps": 760.0,
+        "settlement_hold_days": 21,
+        "effective_risk_ratio": 2.5858461643770774,
+        "liquidity_coverage_index": 9.797906055657041
+      },
+      "total_cost": 31.98,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 211,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0008",
+      "slice_id": "EU_smb",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.9936457286722741,
+      "counterfactual_risk_score": 0.631487552688101,
+      "actions": {
+        "dispute_reduction_bps": 70,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 500,
+        "settlement_hold_days_delta": 29
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 14,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 2,
+        "settlement_hold_days_delta": 29
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 3.89,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 6750.0,
+        "dispute_rate_bps": 720.0,
+        "settlement_hold_days": 31,
+        "effective_risk_ratio": 2.5381361351991876,
+        "liquidity_coverage_index": 9.791620583137602
+      },
+      "total_cost": 141.786,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 1431,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0009",
+      "slice_id": "LATAM_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.8973434780707986,
+      "counterfactual_risk_score": 0.6944561411265663,
+      "actions": {
+        "dispute_reduction_bps": 15,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 3,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 2.86,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 3500.0,
+        "dispute_rate_bps": 650.0,
+        "settlement_hold_days": 13,
+        "effective_risk_ratio": 2.317807684828652,
+        "liquidity_coverage_index": 8.146386644863359
+      },
+      "total_cost": 11.16,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 10,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0010",
+      "slice_id": "LATAM_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.75,
+      "initial_risk_score": 0.9869548619350101,
+      "counterfactual_risk_score": 0.7123582073912905,
+      "actions": {
+        "dispute_reduction_bps": 20,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 4,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 9.38,
+        "kyc_tier": 3,
+        "reserve_deposit_usd": 13250.0,
+        "dispute_rate_bps": 760.0,
+        "settlement_hold_days": 3,
+        "effective_risk_ratio": 2.6327122743856237,
+        "liquidity_coverage_index": 8.583656599762982
+      },
+      "total_cost": 23.04,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 141,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0011",
+      "slice_id": "LATAM_mid_market",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.9473605944393203,
+      "counterfactual_risk_score": 0.6447348467828568,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 9.29,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 4500.0,
+        "dispute_rate_bps": 670.0,
+        "settlement_hold_days": 19,
+        "effective_risk_ratio": 2.2259932916661245,
+        "liquidity_coverage_index": 8.789213460961934
+      },
+      "total_cost": 13.8,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 6,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0012",
+      "slice_id": "LATAM_smb",
+      "audit_status": "PASSED",
+      "threshold": 0.75,
+      "initial_risk_score": 0.9569705479394343,
+      "counterfactual_risk_score": 0.7272002429762535,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 8.95,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 4000.0,
+        "dispute_rate_bps": 665.0,
+        "settlement_hold_days": 9,
+        "effective_risk_ratio": 2.3077968837793126,
+        "liquidity_coverage_index": 7.897154934983634
+      },
+      "total_cost": 15.58,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 108,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0013",
+      "slice_id": "NA_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.6,
+      "initial_risk_score": 0.6602853963713661,
+      "counterfactual_risk_score": 0.5932979227929814,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 250,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 1,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 14.53,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 10500.0,
+        "dispute_rate_bps": 600.0,
+        "settlement_hold_days": 18,
+        "effective_risk_ratio": 2.133297234464887,
+        "liquidity_coverage_index": 9.335177444490585
+      },
+      "total_cost": 1.02,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 4,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0014",
+      "slice_id": "NA_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.824605229509992,
+      "counterfactual_risk_score": 0.6148602339873329,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 6.59,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 13250.0,
+        "dispute_rate_bps": 590.0,
+        "settlement_hold_days": 14,
+        "effective_risk_ratio": 2.237704134607127,
+        "liquidity_coverage_index": 9.30082843563122
+      },
+      "total_cost": 5.7,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 5,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0015",
+      "slice_id": "NA_mid_market",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.7542980209376734,
+      "counterfactual_risk_score": 0.44394417686120013,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 31.05,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 1500.0,
+        "dispute_rate_bps": 545.0,
+        "settlement_hold_days": 11,
+        "effective_risk_ratio": 1.8291191562697555,
+        "liquidity_coverage_index": 6.9909195935332145
+      },
+      "total_cost": 7.180000000000001,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 29,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0016",
+      "slice_id": "NA_smb",
+      "audit_status": "PASSED",
+      "threshold": 0.75,
+      "initial_risk_score": 0.9857999127711438,
+      "counterfactual_risk_score": 0.7314378229593443,
+      "actions": {
+        "dispute_reduction_bps": 55,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 11,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 32.24,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 12000.0,
+        "dispute_rate_bps": 750.0,
+        "settlement_hold_days": 10,
+        "effective_risk_ratio": 2.6309057568821475,
+        "liquidity_coverage_index": 8.896384787813686
+      },
+      "total_cost": 42.29,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 293,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0017",
+      "slice_id": "APAC_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.6802762581121505,
+      "counterfactual_risk_score": 0.5988637293569903,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 2
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 2
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 35.94,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 6750.0,
+        "dispute_rate_bps": 585.0,
+        "settlement_hold_days": 8,
+        "effective_risk_ratio": 2.038439002771535,
+        "liquidity_coverage_index": 8.115033131654393
+      },
+      "total_cost": 2.42,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 7,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0018",
+      "slice_id": "APAC_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.9403967683964276,
+      "counterfactual_risk_score": 0.6172407957196466,
+      "actions": {
+        "dispute_reduction_bps": 15,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 3,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 20.53,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 11500.0,
+        "dispute_rate_bps": 700.0,
+        "settlement_hold_days": 15,
+        "effective_risk_ratio": 2.3295574324452177,
+        "liquidity_coverage_index": 9.375287693815075
+      },
+      "total_cost": 22.465,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 93,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0019",
+      "slice_id": "APAC_mid_market",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.9884888315373007,
+      "counterfactual_risk_score": 0.6781981392354604,
+      "actions": {
+        "dispute_reduction_bps": 35,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 750,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 7,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 3,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 22.9,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 10500.0,
+        "dispute_rate_bps": 710.0,
+        "settlement_hold_days": 11,
+        "effective_risk_ratio": 2.416749706934374,
+        "liquidity_coverage_index": 8.940187716114831
+      },
+      "total_cost": 35.38499999999999,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 345,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0020",
+      "slice_id": "APAC_smb",
+      "audit_status": "PASSED",
+      "threshold": 0.6,
+      "initial_risk_score": 0.732566159337677,
+      "counterfactual_risk_score": 0.42354332297762765,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 22.18,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 2500.0,
+        "dispute_rate_bps": 565.0,
+        "settlement_hold_days": 6,
+        "effective_risk_ratio": 1.7344414868247804,
+        "liquidity_coverage_index": 7.359529279755243
+      },
+      "total_cost": 5.7,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 5,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0021",
+      "slice_id": "EU_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.7657228611410236,
+      "counterfactual_risk_score": 0.5596179167651889,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 15.05,
+        "kyc_tier": 1,
+        "reserve_deposit_usd": 12000.0,
+        "dispute_rate_bps": 555.0,
+        "settlement_hold_days": 7,
+        "effective_risk_ratio": 2.0246674387426173,
+        "liquidity_coverage_index": 8.662788976025617
+      },
+      "total_cost": 5.7,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 10,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0022",
+      "slice_id": "EU_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.75,
+      "initial_risk_score": 0.9854378072317603,
+      "counterfactual_risk_score": 0.7424497897214193,
+      "actions": {
+        "dispute_reduction_bps": 35,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 750,
+        "settlement_hold_days_delta": 1
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 7,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 3,
+        "settlement_hold_days_delta": 1
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 23.51,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 1500.0,
+        "dispute_rate_bps": 660.0,
+        "settlement_hold_days": 5,
+        "effective_risk_ratio": 2.2075188493324216,
+        "liquidity_coverage_index": 6.500724858423737
+      },
+      "total_cost": 37.37599999999999,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 362,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0023",
+      "slice_id": "EU_mid_market",
+      "audit_status": "PASSED",
+      "threshold": 0.6,
+      "initial_risk_score": 0.9805275119763676,
+      "counterfactual_risk_score": 0.599740118775759,
+      "actions": {
+        "dispute_reduction_bps": 55,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 11,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 1
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 7.07,
+        "kyc_tier": 3,
+        "reserve_deposit_usd": 2500.0,
+        "dispute_rate_bps": 735.0,
+        "settlement_hold_days": 20,
+        "effective_risk_ratio": 2.308280286322,
+        "liquidity_coverage_index": 8.520685337036893
+      },
+      "total_cost": 44.345,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 99,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0024",
+      "slice_id": "EU_smb",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.90527650725175,
+      "counterfactual_risk_score": 0.4150649399895945,
+      "actions": {
+        "dispute_reduction_bps": 20,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 4,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 29.72,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 3000.0,
+        "dispute_rate_bps": 600.0,
+        "settlement_hold_days": 8,
+        "effective_risk_ratio": 1.8367493424100054,
+        "liquidity_coverage_index": 7.667313154100555
+      },
+      "total_cost": 23.04,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 172,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0025",
+      "slice_id": "LATAM_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.7395038675999703,
+      "counterfactual_risk_score": 0.6730087419154942,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 250,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 0,
+        "reserve_deposit_usd_delta": 1,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 32.08,
+        "kyc_tier": 0,
+        "reserve_deposit_usd": 5000.0,
+        "dispute_rate_bps": 575.0,
+        "settlement_hold_days": 16,
+        "effective_risk_ratio": 2.282126788217199,
+        "liquidity_coverage_index": 8.11375763280187
+      },
+      "total_cost": 1.02,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 4,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0026",
+      "slice_id": "LATAM_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.75,
+      "initial_risk_score": 0.9723732032440036,
+      "counterfactual_risk_score": 0.7399338165715109,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 500,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 2,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 15.92,
+        "kyc_tier": 3,
+        "reserve_deposit_usd": 1500.0,
+        "dispute_rate_bps": 730.0,
+        "settlement_hold_days": 9,
+        "effective_risk_ratio": 2.285249751350512,
+        "liquidity_coverage_index": 7.169031967068979
+      },
+      "total_cost": 16.599999999999998,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 121,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0027",
+      "slice_id": "LATAM_mid_market",
+      "audit_status": "PASSED",
+      "threshold": 0.7,
+      "initial_risk_score": 0.991487319739096,
+      "counterfactual_risk_score": 0.6703300609675873,
+      "actions": {
+        "dispute_reduction_bps": 30,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 20
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 6,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 20
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 10.36,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 13250.0,
+        "dispute_rate_bps": 785.0,
+        "settlement_hold_days": 22,
+        "effective_risk_ratio": 2.9171445248705825,
+        "liquidity_coverage_index": 9.807185039983013
+      },
+      "total_cost": 78.14,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 502,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0028",
+      "slice_id": "LATAM_smb",
+      "audit_status": "PASSED",
+      "threshold": 0.75,
+      "initial_risk_score": 0.862802366189386,
+      "counterfactual_risk_score": 0.6029171432964923,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 22.61,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 0.0,
+        "dispute_rate_bps": 585.0,
+        "settlement_hold_days": 6,
+        "effective_risk_ratio": 1.8212472238516269,
+        "liquidity_coverage_index": -0.5149620027487232
+      },
+      "total_cost": 5.7,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 5,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0029",
+      "slice_id": "NA_enterprise",
+      "audit_status": "PASSED",
+      "threshold": 0.6,
+      "initial_risk_score": 0.8121858999121695,
+      "counterfactual_risk_score": 0.5734135169241722,
+      "actions": {
+        "dispute_reduction_bps": 5,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 1,
+        "kyc_tier_delta": 1,
+        "reserve_deposit_usd_delta": 0,
+        "settlement_hold_days_delta": 0
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 27.37,
+        "kyc_tier": 2,
+        "reserve_deposit_usd": 14500.0,
+        "dispute_rate_bps": 705.0,
+        "settlement_hold_days": 16,
+        "effective_risk_ratio": 2.310645984134415,
+        "liquidity_coverage_index": 9.669615935554072
+      },
+      "total_cost": 7.44,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 8,
+      "violated_constraints": []
+    },
+    {
+      "merchant_id": "MRC-0030",
+      "slice_id": "NA_micro",
+      "audit_status": "PASSED",
+      "threshold": 0.65,
+      "initial_risk_score": 0.9888605328128289,
+      "counterfactual_risk_score": 0.6121274733352704,
+      "actions": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 3000,
+        "settlement_hold_days_delta": 12
+      },
+      "step_counts": {
+        "dispute_reduction_bps": 0,
+        "kyc_tier_delta": 2,
+        "reserve_deposit_usd_delta": 12,
+        "settlement_hold_days_delta": 12
+      },
+      "counterfactual_features": {
+        "account_tenure_months": 7.64,
+        "kyc_tier": 3,
+        "reserve_deposit_usd": 6250.0,
+        "dispute_rate_bps": 820.0,
+        "settlement_hold_days": 29,
+        "effective_risk_ratio": 2.770022576929143,
+        "liquidity_coverage_index": 9.790555019776486
+      },
+      "total_cost": 60.047999999999995,
+      "dag_residuals": {
+        "effective_risk_ratio": 0.0,
+        "liquidity_coverage_index": 0.0
+      },
+      "states_visited": 396,
+      "violated_constraints": []
+    }
+  ]
+}

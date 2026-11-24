@@ -1,0 +1,59 @@
+artifacts = ["/app/output/solution.json", "/app/solver.py"]
+
+[task]
+name = "risk-optimization/causalbound-policy-recourse"
+description = """
+Implement a deterministic neuro-symbolic solver (/app/solver.py) and generate /app/output/solution.json
+solving two coupled combinatorial optimization problems under strict schema, numeric, and audit contracts:
+1. Core Engine A: Jointly select risk thresholds across 16 merchant slices (4 regions x 4 tiers) minimizing
+   exact integer-cent financial loss under per-slice ECE gates, per-slice FPR ceilings, pairwise TPR fairness
+   (|TPR_i - TPR_j| <= delta), and a non-separable global false-ban budget (sum FP_m <= max_global_fp).
+2. Core Engine B: For 30 blocked merchants, compute globally optimal, causally valid discrete interventions
+   flipping a monotonic HistGradientBoostingClassifier across a non-linear SCM DAG (2.20e7 candidates/instance)
+   under a non-separable quadratic cross-term cost objective.
+"""
+
+[metadata]
+category = "Combinatorial Optimization & Causal ML"
+subcategory = "Constrained Policy Thresholding & Non-Linear Causal Recourse"
+task_objective = ["implement", "optimize"]
+artifact_type = ["codebase", "generated_output_artifact"]
+expert_time_estimate_hours = 4
+
+difficulty_explanation = """
+Naive heuristics and unpruned searches fail decisively on three structural barriers:
+1. Calibrated action space: Engine B spans 3 x 401 x 101 x 181 = 21,992,043 (~2.20e7) discrete interventions
+   per merchant (~6.60e8 across 30 instances), defeating brute-force enumeration under a 1 vCPU / 2048 MB cap.
+2. Non-separable coupling: Engine A couples all 16 slices via pairwise TPR delta and global FP budget; Engine B
+   adds strictly positive quadratic cross-terms (beta_ij > 0) defeating independent 1D coordinate greedy search.
+3. Non-linear SCM DAG & strict tie-breaking: Derived nodes propagate via exp/log1p/sqrt; exact 3-tier
+   deterministic tie-breaking and FAILED_AUDIT null-mapping are enforced bidirectionally.
+"""
+
+solution_explanation = """
+Engine A reduces pairwise |TPR_i - TPR_j| <= delta to exact [L, L + delta] TPR windows solved via
+Multiple-Choice Knapsack DP with 3-tier Pareto-dominance pruning and exact integer-cent / Fraction math.
+Engine B runs Priority-Queue Branch-and-Bound with multi-strategy greedy upper-bound seeding, closed-form
+quadratic domain tightening, monotonic optimistic feasibility pruning, MRV branching, @lru_cache memoization,
+and vectorized NumPy leaf sweeps.
+"""
+
+verification_explanation = """
+Enforces the Five-Stage Verification Ladder (Existence -> Strict Schema -> Hard Invariants -> Optimality ->
+Exact 3-Tier Match), Audits A-D (Anti-Slack, Anti-Collapse, Runtime Anti-Memorization, Failure-State
+Bi-Directional coverage), raw-byte anti-tamper scanning, and in-memory Load-and-Purge fixture isolation.
+"""
+
+[verifier]
+timeout_sec = 300.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = false

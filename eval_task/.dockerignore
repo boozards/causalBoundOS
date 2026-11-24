@@ -1,0 +1,9 @@
+solution/
+tests/
+*.expected.json
+expected.json
+/logs/
+.logs_verifier/
+__pycache__/
+*.pyc
+.pytest_cache/
