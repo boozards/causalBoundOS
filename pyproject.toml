@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "causalbound"
+version = "0.1.0"
+description = "Neuro-symbolic Merchant Risk Policy & Causal Recourse Autopilot"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "scikit-learn==1.6.1",
+    "numpy==2.2.3",
+    "pandas==2.2.3",
+    "scipy==1.15.2",
+    "joblib==1.4.2",
+    "pydantic==2.10.6",
+    "fastapi==0.115.8",
+    "uvicorn==0.34.0",
+    "opentelemetry-api>=1.30.0",
+    "opentelemetry-sdk>=1.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.4",
+    "ruff==0.9.6",
+]
+control-plane = [
+    "mcp>=1.5.0",
+    "google-adk==0.5.0",
+    "google-genai>=1.12.1",
+    "psycopg[binary]==3.2.4",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/causalbound"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "eval_task/tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
