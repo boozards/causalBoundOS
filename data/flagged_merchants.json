@@ -1,0 +1,254 @@
+[
+  {
+    "merchant_id": "MRC-001",
+    "slice_id": "NA_VIP",
+    "geography": "NA",
+    "tier": "VIP",
+    "decision_threshold": 0.55,
+    "initial_abuse_prob": 0.918262,
+    "features": {
+      "account_age_days": 206.0,
+      "region_tier": 0.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 2.5,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7000.0,
+      "escrow_deposit_usd": 1000.0,
+      "velocity_limit_tx_hr": 76.0,
+      "effective_exposure_ratio": 3.166931,
+      "trust_velocity_score": 5.891501,
+      "residual_chargeback_risk": 2.835147
+    }
+  },
+  {
+    "merchant_id": "MRC-002",
+    "slice_id": "EU_VIP",
+    "geography": "EU",
+    "tier": "VIP",
+    "decision_threshold": 0.55,
+    "initial_abuse_prob": 0.913636,
+    "features": {
+      "account_age_days": 183.0,
+      "region_tier": 1.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 0.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7000.0,
+      "escrow_deposit_usd": 1500.0,
+      "velocity_limit_tx_hr": 62.0,
+      "effective_exposure_ratio": 2.8,
+      "trust_velocity_score": 5.859062,
+      "residual_chargeback_risk": 2.707443
+    }
+  },
+  {
+    "merchant_id": "MRC-003",
+    "slice_id": "APAC_VIP",
+    "geography": "APAC",
+    "tier": "VIP",
+    "decision_threshold": 0.55,
+    "initial_abuse_prob": 0.894425,
+    "features": {
+      "account_age_days": 171.0,
+      "region_tier": 2.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 2.5,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7000.0,
+      "escrow_deposit_usd": 2000.0,
+      "velocity_limit_tx_hr": 69.0,
+      "effective_exposure_ratio": 2.111287,
+      "trust_velocity_score": 5.703124,
+      "residual_chargeback_risk": 2.449839
+    }
+  },
+  {
+    "merchant_id": "MRC-004",
+    "slice_id": "LATAM_GROWTH",
+    "geography": "LATAM",
+    "tier": "Growth",
+    "decision_threshold": 0.55,
+    "initial_abuse_prob": 0.91427,
+    "features": {
+      "account_age_days": 142.0,
+      "region_tier": 3.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 5.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7000.0,
+      "escrow_deposit_usd": 2000.0,
+      "velocity_limit_tx_hr": 75.0,
+      "effective_exposure_ratio": 1.910372,
+      "trust_velocity_score": 5.400802,
+      "residual_chargeback_risk": 2.369418
+    }
+  },
+  {
+    "merchant_id": "MRC-005",
+    "slice_id": "NA_GROWTH",
+    "geography": "NA",
+    "tier": "Growth",
+    "decision_threshold": 0.55,
+    "initial_abuse_prob": 0.876583,
+    "features": {
+      "account_age_days": 229.0,
+      "region_tier": 0.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 5.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 8000.0,
+      "escrow_deposit_usd": 1500.0,
+      "velocity_limit_tx_hr": 80.0,
+      "effective_exposure_ratio": 2.619938,
+      "trust_velocity_score": 5.999766,
+      "residual_chargeback_risk": 2.642519
+    }
+  },
+  {
+    "merchant_id": "MRC-006",
+    "slice_id": "EU_GROWTH",
+    "geography": "EU",
+    "tier": "Growth",
+    "decision_threshold": 0.55,
+    "initial_abuse_prob": 0.90161,
+    "features": {
+      "account_age_days": 131.0,
+      "region_tier": 1.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 2.5,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 8500.0,
+      "escrow_deposit_usd": 2000.0,
+      "velocity_limit_tx_hr": 57.0,
+      "effective_exposure_ratio": 2.563706,
+      "trust_velocity_score": 5.459307,
+      "residual_chargeback_risk": 2.621914
+    }
+  },
+  {
+    "merchant_id": "MRC-007",
+    "slice_id": "APAC_STANDARD",
+    "geography": "APAC",
+    "tier": "Standard",
+    "decision_threshold": 0.48,
+    "initial_abuse_prob": 0.896244,
+    "features": {
+      "account_age_days": 156.0,
+      "region_tier": 2.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 5.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7000.0,
+      "escrow_deposit_usd": 2000.0,
+      "velocity_limit_tx_hr": 82.0,
+      "effective_exposure_ratio": 1.910372,
+      "trust_velocity_score": 5.467624,
+      "residual_chargeback_risk": 2.369418
+    }
+  },
+  {
+    "merchant_id": "MRC-008",
+    "slice_id": "LATAM_STANDARD",
+    "geography": "LATAM",
+    "tier": "Standard",
+    "decision_threshold": 0.48,
+    "initial_abuse_prob": 0.912977,
+    "features": {
+      "account_age_days": 223.0,
+      "region_tier": 3.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 2.5,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7000.0,
+      "escrow_deposit_usd": 2000.0,
+      "velocity_limit_tx_hr": 71.0,
+      "effective_exposure_ratio": 2.111287,
+      "trust_velocity_score": 6.0418,
+      "residual_chargeback_risk": 2.449839
+    }
+  },
+  {
+    "merchant_id": "MRC-009",
+    "slice_id": "NA_STANDARD",
+    "geography": "NA",
+    "tier": "Standard",
+    "decision_threshold": 0.48,
+    "initial_abuse_prob": 0.918681,
+    "features": {
+      "account_age_days": 87.0,
+      "region_tier": 0.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 5.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 8500.0,
+      "escrow_deposit_usd": 1500.0,
+      "velocity_limit_tx_hr": 69.0,
+      "effective_exposure_ratio": 2.783685,
+      "trust_velocity_score": 4.798411,
+      "residual_chargeback_risk": 2.701624
+    }
+  },
+  {
+    "merchant_id": "MRC-010",
+    "slice_id": "EU_HIGH_RISK",
+    "geography": "EU",
+    "tier": "High-Risk",
+    "decision_threshold": 0.48,
+    "initial_abuse_prob": 0.857371,
+    "features": {
+      "account_age_days": 178.0,
+      "region_tier": 1.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 5.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7500.0,
+      "escrow_deposit_usd": 1500.0,
+      "velocity_limit_tx_hr": 61.0,
+      "effective_exposure_ratio": 2.456192,
+      "trust_velocity_score": 5.831433,
+      "residual_chargeback_risk": 2.582061
+    }
+  },
+  {
+    "merchant_id": "MRC-011",
+    "slice_id": "APAC_HIGH_RISK",
+    "geography": "APAC",
+    "tier": "High-Risk",
+    "decision_threshold": 0.48,
+    "initial_abuse_prob": 0.895967,
+    "features": {
+      "account_age_days": 154.0,
+      "region_tier": 2.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 5.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7500.0,
+      "escrow_deposit_usd": 1500.0,
+      "velocity_limit_tx_hr": 59.0,
+      "effective_exposure_ratio": 2.456192,
+      "trust_velocity_score": 5.656452,
+      "residual_chargeback_risk": 2.582061
+    }
+  },
+  {
+    "merchant_id": "MRC-012",
+    "slice_id": "LATAM_HIGH_RISK",
+    "geography": "LATAM",
+    "tier": "High-Risk",
+    "decision_threshold": 0.48,
+    "initial_abuse_prob": 0.905222,
+    "features": {
+      "account_age_days": 137.0,
+      "region_tier": 3.0,
+      "historical_chargebacks": 2.0,
+      "reserve_holdback_pct": 5.0,
+      "kyc_verification_level": 1.0,
+      "daily_payout_cap_usd": 7000.0,
+      "escrow_deposit_usd": 1500.0,
+      "velocity_limit_tx_hr": 55.0,
+      "effective_exposure_ratio": 2.292446,
+      "trust_velocity_score": 5.539363,
+      "residual_chargeback_risk": 2.520153
+    }
+  }
+]
