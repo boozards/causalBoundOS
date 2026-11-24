@@ -7,13 +7,13 @@ on:
 
 jobs:
   engines-and-harbor:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.13.2"
+          python-version: "3.13"
 
       - name: Install pinned dependencies
         run: |
@@ -23,7 +23,7 @@ jobs:
       - name: Regenerate lockstep assets & run unit/parity tests
         run: |
           python scripts/sync_eval_task.py
-          pytest -v tests/test_engine_b_parity.py
+          pytest -v tests/
 
       - name: Run 3-tier verification regimes (Nop / Oracle / +/-1 Perturbation)
         run: python eval_task/verify_regimes.py
@@ -40,7 +40,7 @@ jobs:
         run: python benchmarks/run_v1_vs_v2.py
 
   frontend-check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: frontend
