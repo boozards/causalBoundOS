@@ -1,0 +1,28 @@
+{
+  "mode": "deterministic_benchmark",
+  "policy_scenarios": 25,
+  "recourse_cases": 30,
+  "v1_pure_llm": {
+    "policy_violation_rate_pct": 100.0,
+    "recourse_infeasible_rate_pct": 0.0,
+    "combined_violation_rate_pct": 45.45,
+    "mean_optimality_gap_pct": 153.52,
+    "p95_latency_ms": 685.02,
+    "avg_ttft_ms": 210.0,
+    "avg_tokens_per_sec": 613.32,
+    "avg_cost_per_policy_update_usd": 0.00053
+  },
+  "v2_causalbound": {
+    "policy_violation_rate_pct": 0.0,
+    "recourse_infeasible_rate_pct": 0.0,
+    "combined_violation_rate_pct": 0.0,
+    "mean_optimality_gap_pct": 0.0,
+    "exact_dollar_loss_saved_usd": "0.00",
+    "avg_states_pruned_ratio": "6.88e-06",
+    "p95_latency_ms": 29.16,
+    "p95_recourse_solver_ms": 195.67,
+    "avg_ttft_ms": 4.2,
+    "avg_tokens_per_sec": 3088.52,
+    "avg_cost_per_policy_update_usd": 5.1e-05
+  }
+}

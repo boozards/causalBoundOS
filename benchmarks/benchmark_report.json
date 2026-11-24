@@ -1,0 +1,22 @@
+{
+  "hard_constraint_violation_rate": {
+    "v1_pure_llm": 76.4,
+    "v2_causalbound": 0.0
+  },
+  "optimality_gap_percent": {
+    "v1_pure_llm": 93.92,
+    "v2_causalbound": 0.0
+  },
+  "dollar_loss_saved_usd": 1381064.6,
+  "solver_states_pruned_ratio": "6.88e-06",
+  "avg_states_visited": 151.4,
+  "total_theoretical_space": 21992043,
+  "telemetry": {
+    "v1_p95_latency_ms": 3200.0,
+    "v2_p95_latency_ms": 18.4,
+    "v1_avg_cost_cents": 1.25,
+    "v2_avg_cost_cents": 0.18,
+    "v1_tokens_per_sec": 42.5,
+    "v2_tokens_per_sec": 84.0
+  }
+}
